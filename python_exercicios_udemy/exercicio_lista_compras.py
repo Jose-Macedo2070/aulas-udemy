@@ -57,7 +57,7 @@ while True:
         produto = input('Digite o nome do produto: ')
         print(40 * '-')
         lista_compras.append(produto)
-        print('Produto cadastrado com sucesso!!')
+        print(f'Produto {produto} cadastrado com sucesso!!')
         print(40 * '-')
         continue
             
@@ -76,11 +76,18 @@ while True:
             print(f'{lista_compras.index(produtos)} | {produtos}')
             print(6 * '-')
 
-        deletar = input('Digite o nome do produto que quer deletar: ').lower()
-        lista_compras.remove(deletar)
+        deletar = input('Digite o indice do produto que quer deletar: ')
+        # lista_compras.remove(deletar)
+
+        try:
+            deletar_int = int(deletar)
+            del(lista_compras[deletar_int])
+
+        except:
+            print('Não foi possivel deletar esse indice, tente novamente, lembrando, digite apenas números ')
 
 
-        print(4 * '-', 'Lista atual', 4 * '-', '\n', 10 * '-' )
+        print(4 * '-', 'Lista atual', 4 * '-', '\n', 40 * '-' )
 
         for produtos in lista_compras:
             print(f'{lista_compras.index(produtos)} | {produtos}')
