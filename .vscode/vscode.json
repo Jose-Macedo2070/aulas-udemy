@@ -1,0 +1,17 @@
+{
+    "workbench.colorTheme": "Omni",
+    "files.autoSave": "afterDelay",
+    "liveServer.settings.donotShowInfoMsg": true,
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.fontSize": 18,
+    "editor.minimap.size": "fit",
+    "editor.minimap.enabled": false,
+    "editor.wordWrap": "on",
+    "git.autofetch": true,
+    "code-runner.executorMap" : {
+        "python" : " clear ; python -u "
+    },
+    "code-runner.runInTerminal" : true ,
+    "code-runner.ignoreSelection": true,
+    "explorer.confirmDragAndDrop": false
+}
